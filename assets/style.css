@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root{
+    --cor-menu: #141312;
+    --font: 'Noto Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.menu{
+    height: 52px;
+    width: 100vw;
+    background-color: #141312;
+    display: flex;
+}
+.menu-left{
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    
+    display: flex;
+}
+.menu-logo{
+    width: 10%;
+    overflow-y: hidden;
+    padding:10px;
+}
+.menu-logo a img{
+    width: 130px;
+}
+.menu-submenus {
+    text-decoration: none;
+    list-style: none;
+    width: 40%; 
+    overflow-y: hidden;
+    
+}
+.menu-submenus ul{
+    display: flex;   
+}
+.menu-submenus li {
+    text-decoration: none;
+    list-style: none;
+    color: #999;
+    font-size: 12pt;
+    padding: 2% 5%;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 1s;
+    overflow-y: hidden;
+    
+}
+.menu-submenus li:hover{
+    border-bottom: 1px solid #ffdf9d;
+    color: white;
+}
+.menu-right{
+    
+    width: 22%;
+    height: 100%;
+    position: relative;
+    position: absolute;
+    right: 0;
+}
+.menu-right button{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7px;
+    text-decoration: none;
+    padding: 6px 15px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: 2px solid #ffdf9d;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+.menu-right button:hover{
+    background-image: linear-gradient(90deg,#ffdf9d, white, #ffdf9d);
+    color: black;
+}
+.container{
+    height: 75vh;
+    width: 100vw;
+    
+}
+.container video{
+    position: absolute;
+    top: 47px;
+    width: 100vw;
+    height: 76vh;
+}
+.container-center{
+   position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.container-center img{
+    width: 750px;
+}
+.container-center h1{
+    margin-top: -10px;
+    padding: 1%;
+    color: white;
+    border-top: 2px solid #ffdf9d;
+    border-bottom: 2px solid #ffdf9d;
+    letter-spacing: 5px;
+    background-color: rgba(0,0,0,0.2);
+}
+.container-button button{
+    cursor: pointer;
+}
+.container-button button:nth-child(1){
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7px;
+    text-decoration: none;
+    padding: 6px 15px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    border: 2px solid #ffdf9d;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-right: 80px;
+    transition: 1s;
+}
+.container-button button:nth-child(1):hover{
+    background-image: linear-gradient(90deg,#ffdf9d, white, #ffdf9d);
+    color: black;
+}
+.container-button button:nth-child(2){
+    padding: 6px 15px;
+    letter-spacing: 2px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: #999;
+    transition: 1s;
+    text-shadow: 1px 1px black;
+}.container-button button:nth-child(2):hover{
+    color: white;
+}
+.second{
+    background-image: url(https://images.ctfassets.net/umhrp0op95v1/5Tgvo1m5uD1Ui51zjBvvWD/d7d2c91be1e5384375c60d6cb20c87ca/LA_Covetous_header_Homepage_1920x720.jpg);
+    height: 76vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-color: white;
+    display: flex;
+}
+
+.second-center{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-center-info{
+    height: 60%;
+    width: 40%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.second-center-info img{
+    width: 70%;
+}
+.second-center-info p{
+    color: #999;
+    width: 85%;
+    font-size: 13pt;
+    text-align: center;
+    line-height: 25px;
+}
+.second-center-info button{
+    border: 2px solid #ffdf9d;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 1% 3%;
+    margin-top: 20px;
+    transition: .5s;
+}
+.second-center-info button:hover{
+    background-image: linear-gradient(90deg,#ffdf9d, white, #ffdf9d);
+    color: black;
+    border: 2px solid black;
+}
+.thrist{
+    background-image: url(https://d1glcu56fxkf6q.cloudfront.net/statics/2022-06-07/images/smoke-center-SM.jpg);
+    background-repeat: no-repeat;
+    height: 120vh;
+    width: 100vw;
+    background-attachment: fixed;
+    
+}
+.thrist-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.thrist h1{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-style: italic;
+}
+.thrist img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.thrist-column{
+    display: flex;
+    flex-direction: row;
+    
+}
+.thrist-column .anuncios{
+    margin: 0px 20px;
+}
+.anuncios{
+    cursor: pointer;
+    height: 75vh;
+    width: 300px;
+    background-color: rgba(0,0,0,0.8);
+}
+.anuncios-description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.anuncios h1{
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 30px 30px 0px 30px;
+}
+.anuncios img{
+    width: 300px;
+    transition: .5s;
+    margin-top: 0px;
+}
+.anuncios-width{
+    width: 300px;
+    
+}
+.anuncios img:hover{
+    transform:scale(1.05);
+    
+}
+.anuncios-description p{
+    color: white;
+    font-size: 18px;
+    padding: 25px 20px;
+    text-align: center;
+}
+.anuncios-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.anuncios-button img:nth-child(1){
+    width: 40px;
+    margin-right: 20px;
+}
+.anuncios-button img:nth-child(3){
+    width: 40px;
+    transform: rotate(180deg);
+    margin-left: 20px;  
+}
+.anuncios-button button{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+.forty{
+    background-image: url(https://images.ctfassets.net/umhrp0op95v1/6AqPHly2cOwK8AAuqR8XeM/625804d74af1440e0c590cd851dabce9/LostArk_HP_WorldAdventure_SM.jpg);
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.forty h1{
+    color: white;
+    margin-top: 120px;
+    font-size: 70px;
+    letter-spacing: 5px;
+    font-style: italic;
+}
+.forty img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.forty-description{
+    height: 35%;
+    width: 40%;
+    background-color: rgba(0,0,0,0.7);
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.forty-description p{
+    color: white;
+    text-align: center;
+    font-size: 17px;   
+}
+.forty-description button{
+    border: 1px solid #ffdf9d;
+    padding: 10px;
+    margin-top: 35px;
+    width: 20%;
+    font-weight: bold;
+    transition: 0.5s;
+    background-color: rgba(0,0,0,0);
+    color: white;
+}
+.forty-description button:hover{
+    color: black;
+    background-image: linear-gradient(90deg,#ffdf9d, white, #ffdf9d);;
+}
+.fivy{
+    height: 75vh;
+    width: 100vw;
+    background-image: url(https://d1glcu56fxkf6q.cloudfront.net/statics/2022-06-07/images/smoke-center-SM.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fivy-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 60px;
+    overflow-y: hidden;
+    position: relative;
+    
+}
+.fivy-grid img{
+    width: 300px;
+    cursor: pointer;
+    transition: .5s;
+}
+.fivy-grid img:nth-child(1):hover{
+    transform:scale(1.05);
+}
+.fivy-width{
+    display: flex;
+    position: relative;
+    overflow-y: hidden;
+}
+.fivy-width img:nth-child(2){
+    opacity: 0.7;
+    width: 90px;
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+}
+.fivy-width img:nth-child(2):hover{
+    opacity: 1;
+}
+.footer{
+    height: 30vh;
+    width: 100vw;
+}
+.main-video{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.97);
+    display: none;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    z-index: 999;
+}
+.videoshow{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.videoshow-icon{
+    height: 7%;
+    width: 80%;
+    overflow-y: hidden;
+    
+    font-size: 50px;
+    
+    
+}
+
+.videoshow-icon i{
+    float: right;
+    overflow-y: hidden;
+    color: #666;
+    cursor: pointer;
+}
+.videoshow-iframe{
+    height: 70%;
+    width: 80%;
+    overflow-y: hidden;
+}
+.videoshow-iframe iframe{
+    width: 100%;
+    height: 100%;
+}
+.active{
+    display: block;
+}
+
